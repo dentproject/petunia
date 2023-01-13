@@ -214,7 +214,7 @@ def validateScoreboard(chain, interfaces, extended=True):
         if extended:
             if rule.target not in ('ACCEPT', 'DROP',
                                    'REJECT',
-                                   'LOG',,):
+                                   'LOG',):
                 raise ValueError("invalid target %s in rule" % rule.target)
         else:
             if rule.target not in ('ACCEPT', 'DROP',
